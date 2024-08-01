@@ -99,3 +99,45 @@ header li {
 .contact a:hover {
     color: #77aaff;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header ul {
+        text-align: center;
+    }
+
+    header li {
+        float: none;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile h1 {
+        font-size: 20px;
+    }
+
+    .profile p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section li {
+        padding: 15px;
+    }
+
+    .contact a {
+        font-size: 18px;
+    }
+}
