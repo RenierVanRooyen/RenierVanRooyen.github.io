@@ -459,10 +459,16 @@ i.material-icons {
 }
 .profile-pic {
     border-radius: 50%;
-    border: 5px solid #000;
-    width: 250px;
-    height: 250px;
+    border: 0.5vw solid #000;
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
+}
+
+.user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pg-sub-title {
