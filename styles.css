@@ -48,15 +48,8 @@ header li {
     height: 150px;
     border-radius: 50%;
     border: 3px solid #77aaff;
-    object-fit: cover; /* Ensures the image covers the area without stretching */
-    object-position: center; /* Centers the image */
-}
-
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #77aaff;
+    object-fit: cover;
+    object-position: center;
 }
 
 .profile h1 {
