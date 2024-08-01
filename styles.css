@@ -463,7 +463,7 @@ i.material-icons {
     padding: 5px 10px;
     font-size: 22px;
     transition: all .3s;
-        display: flex;
+    display: flex;
 }
 
 .social-icons-head ul li:nth-child(1) a {
@@ -533,11 +533,27 @@ i.material-icons {
 
     .profile-pic {
         width: 30vw;
-        height: 30vw; 
+        height: 30vw;
         border: 2vw solid #000;
     }
 
     .text, .pr-list ul li {
         font-size: 4vw;
+    }
+
+    .user-profile {
+        padding-left: 10px;
+    }
+
+    .nav ul li a {
+        padding: 10px 0;
+    }
+
+    .main-content {
+        order: 1;
+    }
+
+    .left-content {
+        order: 2;
     }
 }
