@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="wraper">
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
         <div class="container">
             <div class="left-content p-30">
                 <div class="logo">
@@ -75,5 +76,43 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("nav");
+            var button = document.querySelector(".nav-toggle");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+                button.style.right = "10px";
+                button.style.left = "auto";
+            } else {
+                nav.style.display = "block";
+                button.style.left = "10px";
+                button.style.right = "auto";
+            }
+        }
+      window.addEventListener('resize', function() {
+            var nav = document.getElementById("nav");
+            var button = document.querySelector(".nav-toggle");
+            if (window.innerWidth > 768) {
+                nav.style.display = "block";
+                button.style.display = "none";
+            } else {
+                nav.style.display = "none";
+                button.style.display = "block";
+            }
+        });
+
+        window.addEventListener('load', function() {
+            var nav = document.getElementById("nav");
+            var button = document.querySelector(".nav-toggle");
+            if (window.innerWidth > 768) {
+                nav.style.display = "block";
+                button.style.display = "none";
+            } else {
+                nav.style.display = "none";
+                button.style.display = "block";
+            }
+        });
+    </script>
 </body>
 </html>
